@@ -573,8 +573,8 @@ function initEventCountdown() {
         if (hours > 0) {
             parts.push(formatUnit(hours, ['час', 'часа', 'часов']));
         }
-        // Показываем минуты, если дней мало или их вообще нет
-        if (days < 3 && minutes > 0) {
+        // Показываем минуты всегда
+        if (minutes > 0) {
             parts.push(formatUnit(minutes, ['минута', 'минуты', 'минут']));
         }
 
