@@ -535,8 +535,8 @@ function initEventCountdown() {
     // Если элементов нет, значит DOM не готов или их нет на странице
     if (!textEl || !barEl) return;
 
-    // 21 января 2026, 10:00 — локальное время
-    const eventStart = new Date(2026, 0, 21, 10, 0, 0); // Месяцы в JS с 0 (0 = Январь)
+    // 5 марта 2026, 10:00 — локальное время
+    const eventStart = new Date(2026, 2, 5, 10, 0, 0); // Месяцы в JS с 0 (0 = Январь, 2 = Март)
     const windowMs = 30 * 24 * 60 * 60 * 1000; // 30 дней до события как "полная шкала"
 
     function formatUnit(value, forms) {
