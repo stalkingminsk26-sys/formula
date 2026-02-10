@@ -41,7 +41,6 @@
     transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* Mobile Menu Overlay */
 .nav-overlay{
   position: fixed;
   inset: 0;
@@ -49,17 +48,16 @@
   z-index: 997;
 
   opacity: 0;
-  visibility: hidden;     /* ВАЖНО */
-  pointer-events: none;   /* ВАЖНО */
+  visibility: hidden;
+  pointer-events: none;
 
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-/* Активен только когда меню реально открыто */
 .nav-overlay.open{
   opacity: 1;
-  visibility: visible;    /* ВАЖНО */
-  pointer-events: auto;   /* чтобы можно было кликнуть и закрыть меню */
+  visibility: visible;
+  pointer-events: auto;
 }
 
 /* ===== MOBILE BREAKPOINTS ===== */
