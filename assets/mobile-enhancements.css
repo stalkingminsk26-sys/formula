@@ -41,20 +41,25 @@
     transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* Mobile Navigation Overlay */
-.nav-overlay {
-  display: none;
+/* Mobile Menu Overlay */
+.nav-overlay{
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0,0,0,0.6);
   z-index: 997;
+
   opacity: 0;
-  transition: opacity 0.3s ease;
+  visibility: hidden;     /* ВАЖНО */
+  pointer-events: none;   /* ВАЖНО */
+
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-.nav-overlay.open {
-  display: block;
+/* Активен только когда меню реально открыто */
+.nav-overlay.open{
   opacity: 1;
+  visibility: visible;    /* ВАЖНО */
+  pointer-events: auto;   /* чтобы можно было кликнуть и закрыть меню */
 }
 
 /* ===== MOBILE BREAKPOINTS ===== */
