@@ -43,19 +43,18 @@
 
 /* Mobile Navigation Overlay */
 .nav-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 997;
-    opacity: 0;
-    pointer-events: none !important;
-    /* ВСЕГДА none - не блокирует клики */
-    transition: opacity 0.3s ease;
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 997;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .nav-overlay.open {
-    opacity: 1;
-    /* pointer-events остаётся none! */
+  display: block;
+  opacity: 1;
 }
 
 /* ===== MOBILE BREAKPOINTS ===== */
